@@ -118,6 +118,7 @@ ggplot(mpg) +
 What will this code do?
 
 ```{r}
+#| label: plot-with-displ-hwy-class
 ggplot(mpg, aes(x = displ, y = hwy)) + 
   geom_point(aes(color = class)) +
   geom_smooth(color = "black", 
